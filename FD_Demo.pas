@@ -1,0 +1,65 @@
+unit FD_Demo;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.PG,
+  FireDAC.Phys.PGDef, FireDAC.VCLUI.Wait, Data.DB, FireDAC.Comp.Client,
+  FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, Vcl.Grids,
+  Vcl.DBGrids, FireDAC.Comp.DataSet, FireDAC.Comp.UI, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    FDConnection1: TFDConnection;
+    FDPhysPgDriverLink1: TFDPhysPgDriverLink;
+    FDQuery1: TFDQuery;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    btnAddClick: TButton;
+    btnEditClick: TButton;
+    btnDeleteClick: TButton;
+    btnSaveClick: TButton;
+    procedure btnAddClickClick(Sender: TObject);
+    procedure btnEditClickClick(Sender: TObject);
+    procedure btnDeleteClickClick(Sender: TObject);
+    procedure btnSaveClickClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btnAddClickClick(Sender: TObject);
+begin
+  FDQuery1.Append; // Start adding a new record
+  btnEditClick.SetFocus; // Assuming btnEditClick is used to enter employee name
+end;
+
+procedure TForm1.btnDeleteClickClick(Sender: TObject);
+begin
+  FDQuery1.Delete; // Delete the current record
+end;
+
+procedure TForm1.btnEditClickClick(Sender: TObject);
+begin
+  FDQuery1.Edit; // Start editing the current record
+  btnEditClick.SetFocus; // Assuming btnEditClick is used to edit employee name
+end;
+
+procedure TForm1.btnSaveClickClick(Sender: TObject);
+begin
+  FDQuery1.Post; // Save changes to the current record
+end;
+
+end.

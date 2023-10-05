@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/10/03 21:07:32.000.097,=C:\Users\Mohammad Makkiea\OneDrive\Dokumente\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/10/04 00:03:01.000.006,C:\Users\Mohammad Makkiea\OneDrive\Dokumente\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Mohammad Makkiea\OneDrive\Delphi\FireDac\demo.dfm</Transaction>
+    <Transaction>2023/10/04 00:03:01.000.006,C:\Users\Mohammad Makkiea\OneDrive\Dokumente\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Mohammad Makkiea\OneDrive\Delphi\FireDac\demo.pas</Transaction>
+    <Transaction>2023/10/04 00:05:42.000.649,C:\Users\Mohammad Makkiea\OneDrive\Dokumente\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Mohammad Makkiea\OneDrive\Delphi\FireDac\Project_demo.dproj</Transaction>
+    <Transaction>2023/10/05 23:35:42.000.323,C:\Delphi\FireDac\FD-Demo\FireDac_Demo.dproj=C:\Delphi\FireDac\FD-Demo\Project_demo.dproj</Transaction>
+    <Transaction>2023/10/05 23:47:36.251,C:\Delphi\FireDac\FD-Demo\FD_Demo.dfm=C:\Delphi\FireDac\FD-Demo\demo.dfm</Transaction>
+    <Transaction>2023/10/05 23:47:36.251,C:\Delphi\FireDac\FD-Demo\FD_Demo.pas=C:\Delphi\FireDac\FD-Demo\demo.pas</Transaction>
+  </Transactions>
+</BorlandProject>
